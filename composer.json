@@ -19,9 +19,9 @@
 
     "require": {
         "php":                      ">=5.3.2",
-        "symfony/finder":           ">=2.0.0",        
         "symfony/framework-bundle": ">=2.0.0",
-        "knplabs/knp-snappy":       "*"
+        "symfony/finder":           ">=2.0.0",        
+        "knplabs/knp-snappy":       "dev-bugfix"
     },
 
     "minimum-stability": "dev",
@@ -38,5 +38,11 @@
         }
     },
 
-    "target-dir": "Knp/Bundle/SnappyBundle"
+    "target-dir": "Knp/Bundle/SnappyBundle",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fidesio/snappy"
+        }
+    ]
 }
